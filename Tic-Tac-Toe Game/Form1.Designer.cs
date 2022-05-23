@@ -41,6 +41,7 @@
             this.R1C2 = new System.Windows.Forms.Button();
             this.R1C1 = new System.Windows.Forms.Button();
             this.gameSatus = new System.Windows.Forms.Label();
+            this.resetBTN = new System.Windows.Forms.Button();
             this.mainContainer.SuspendLayout();
             this.gameGrid.SuspendLayout();
             this.SuspendLayout();
@@ -219,12 +220,23 @@
             this.gameSatus.Size = new System.Drawing.Size(0, 49);
             this.gameSatus.TabIndex = 2;
             // 
+            // resetBTN
+            // 
+            this.resetBTN.Location = new System.Drawing.Point(6, 288);
+            this.resetBTN.Name = "resetBTN";
+            this.resetBTN.Size = new System.Drawing.Size(96, 121);
+            this.resetBTN.TabIndex = 3;
+            this.resetBTN.Text = "RESET";
+            this.resetBTN.UseVisualStyleBackColor = true;
+            this.resetBTN.Click += new System.EventHandler(this.resetBTN_Click);
+            // 
             // gameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(584, 524);
+            this.Controls.Add(this.resetBTN);
             this.Controls.Add(this.gameSatus);
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.game_Title);
@@ -252,5 +264,6 @@
         private Button R1C3;
         private Button R1C2;
         private Label gameSatus;
+        private Button resetBTN;
     }
 }

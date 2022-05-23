@@ -935,7 +935,7 @@ namespace Tic_Tac_Toe_Game
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
-                R1C1.Enabled = false;
+                R2C1.Enabled = false;
                 R2C2.Enabled = false;
                 R2C3.Enabled = false;
                 R3C1.Enabled = false;
@@ -980,7 +980,7 @@ namespace Tic_Tac_Toe_Game
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
-                R1C1.Enabled = false;
+                R2C1.Enabled = false;
                 R2C2.Enabled = false;
                 R2C3.Enabled = false;
                 R3C1.Enabled = false;
@@ -992,6 +992,47 @@ namespace Tic_Tac_Toe_Game
             {
                 gameSatus.Text = "Nobody Wins :(";
             }
+        }
+
+        private void resetBTN_Click(object sender, EventArgs e)
+        {
+            num = 0;
+
+            /* ENABLE ALL BUTTONS */
+            R1C1.Enabled = true;
+            R1C2.Enabled = true;
+            R1C3.Enabled = true;
+            R2C1.Enabled = true;
+            R2C2.Enabled = true;
+            R2C3.Enabled = true;
+            R3C1.Enabled = true;
+            R3C2.Enabled = true;
+            R3C3.Enabled = true;
+
+            /* CLEAR ALL BUTTON*/
+            R1C1.Text = "";
+            R1C2.Text = "";
+            R1C3.Text = "";
+            R2C1.Text = "";
+            R2C2.Text = "";
+            R2C3.Text = "";
+            R3C1.Text = "";
+            R3C2.Text = "";
+            R3C3.Text = "";
+
+            /* RESET VALUE FOR WIN DETERMINER */
+            int R1C1VAL = 10;
+            int R1C2VAL = 10;
+            int R1C3VAL = 10;
+            int R2C1VAL = 10;
+            int R2C2VAL = 10;
+            int R2C3VAL = 10;
+            int R3C1VAL = 10;
+            int R3C2VAL = 10;
+            int R3C3VAL = 10;
+
+            /* CLEAR GAME STATUS */
+            gameSatus.Text = string.Empty;
         }
     }
 }
