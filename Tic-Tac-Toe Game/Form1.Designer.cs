@@ -31,7 +31,17 @@
             this.game_Title = new System.Windows.Forms.Label();
             this.mainContainer = new System.Windows.Forms.Panel();
             this.gameGrid = new System.Windows.Forms.TableLayoutPanel();
+            this.R3C3 = new System.Windows.Forms.Button();
+            this.R3C2 = new System.Windows.Forms.Button();
+            this.R3C1 = new System.Windows.Forms.Button();
+            this.R2C3 = new System.Windows.Forms.Button();
+            this.R2C2 = new System.Windows.Forms.Button();
+            this.R2C1 = new System.Windows.Forms.Button();
+            this.R1C3 = new System.Windows.Forms.Button();
+            this.R1C2 = new System.Windows.Forms.Button();
+            this.R1C1 = new System.Windows.Forms.Button();
             this.mainContainer.SuspendLayout();
+            this.gameGrid.SuspendLayout();
             this.SuspendLayout();
             // 
             // game_Title
@@ -61,6 +71,15 @@
             this.gameGrid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.gameGrid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.gameGrid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.gameGrid.Controls.Add(this.R3C3, 2, 2);
+            this.gameGrid.Controls.Add(this.R3C2, 1, 2);
+            this.gameGrid.Controls.Add(this.R3C1, 0, 2);
+            this.gameGrid.Controls.Add(this.R2C3, 2, 1);
+            this.gameGrid.Controls.Add(this.R2C2, 1, 1);
+            this.gameGrid.Controls.Add(this.R2C1, 0, 1);
+            this.gameGrid.Controls.Add(this.R1C3, 2, 0);
+            this.gameGrid.Controls.Add(this.R1C2, 1, 0);
+            this.gameGrid.Controls.Add(this.R1C1, 0, 0);
             this.gameGrid.Font = new System.Drawing.Font("Segoe UI", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gameGrid.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.gameGrid.Location = new System.Drawing.Point(-9, -11);
@@ -71,6 +90,123 @@
             this.gameGrid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.gameGrid.Size = new System.Drawing.Size(357, 314);
             this.gameGrid.TabIndex = 0;
+            // 
+            // R3C3
+            // 
+            this.R3C3.FlatAppearance.BorderSize = 0;
+            this.R3C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R3C3.Font = new System.Drawing.Font("Ink Free", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.R3C3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
+            this.R3C3.Location = new System.Drawing.Point(242, 212);
+            this.R3C3.Name = "R3C3";
+            this.R3C3.Size = new System.Drawing.Size(109, 94);
+            this.R3C3.TabIndex = 8;
+            this.R3C3.UseVisualStyleBackColor = true;
+            this.R3C3.Click += new System.EventHandler(this.R3C3_Click);
+            // 
+            // R3C2
+            // 
+            this.R3C2.FlatAppearance.BorderSize = 0;
+            this.R3C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R3C2.Font = new System.Drawing.Font("Ink Free", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.R3C2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
+            this.R3C2.Location = new System.Drawing.Point(124, 212);
+            this.R3C2.Name = "R3C2";
+            this.R3C2.Size = new System.Drawing.Size(109, 94);
+            this.R3C2.TabIndex = 7;
+            this.R3C2.UseVisualStyleBackColor = true;
+            this.R3C2.Click += new System.EventHandler(this.R3C2_Click);
+            // 
+            // R3C1
+            // 
+            this.R3C1.FlatAppearance.BorderSize = 0;
+            this.R3C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R3C1.Font = new System.Drawing.Font("Ink Free", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.R3C1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
+            this.R3C1.Location = new System.Drawing.Point(6, 212);
+            this.R3C1.Name = "R3C1";
+            this.R3C1.Size = new System.Drawing.Size(109, 94);
+            this.R3C1.TabIndex = 6;
+            this.R3C1.UseVisualStyleBackColor = true;
+            this.R3C1.Click += new System.EventHandler(this.R3C1_Click);
+            // 
+            // R2C3
+            // 
+            this.R2C3.FlatAppearance.BorderSize = 0;
+            this.R2C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R2C3.Font = new System.Drawing.Font("Ink Free", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.R2C3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
+            this.R2C3.Location = new System.Drawing.Point(242, 109);
+            this.R2C3.Name = "R2C3";
+            this.R2C3.Size = new System.Drawing.Size(109, 94);
+            this.R2C3.TabIndex = 5;
+            this.R2C3.UseVisualStyleBackColor = true;
+            this.R2C3.Click += new System.EventHandler(this.R2C3_Click);
+            // 
+            // R2C2
+            // 
+            this.R2C2.FlatAppearance.BorderSize = 0;
+            this.R2C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R2C2.Font = new System.Drawing.Font("Ink Free", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.R2C2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
+            this.R2C2.Location = new System.Drawing.Point(124, 109);
+            this.R2C2.Name = "R2C2";
+            this.R2C2.Size = new System.Drawing.Size(109, 94);
+            this.R2C2.TabIndex = 4;
+            this.R2C2.UseVisualStyleBackColor = true;
+            this.R2C2.Click += new System.EventHandler(this.R2C2_Click);
+            // 
+            // R2C1
+            // 
+            this.R2C1.FlatAppearance.BorderSize = 0;
+            this.R2C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R2C1.Font = new System.Drawing.Font("Ink Free", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.R2C1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
+            this.R2C1.Location = new System.Drawing.Point(6, 109);
+            this.R2C1.Name = "R2C1";
+            this.R2C1.Size = new System.Drawing.Size(109, 94);
+            this.R2C1.TabIndex = 3;
+            this.R2C1.UseVisualStyleBackColor = true;
+            this.R2C1.Click += new System.EventHandler(this.R2C1_Click);
+            // 
+            // R1C3
+            // 
+            this.R1C3.FlatAppearance.BorderSize = 0;
+            this.R1C3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R1C3.Font = new System.Drawing.Font("Ink Free", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.R1C3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
+            this.R1C3.Location = new System.Drawing.Point(242, 6);
+            this.R1C3.Name = "R1C3";
+            this.R1C3.Size = new System.Drawing.Size(109, 94);
+            this.R1C3.TabIndex = 2;
+            this.R1C3.UseVisualStyleBackColor = true;
+            this.R1C3.Click += new System.EventHandler(this.R1C3_Click);
+            // 
+            // R1C2
+            // 
+            this.R1C2.FlatAppearance.BorderSize = 0;
+            this.R1C2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R1C2.Font = new System.Drawing.Font("Ink Free", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.R1C2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
+            this.R1C2.Location = new System.Drawing.Point(124, 6);
+            this.R1C2.Name = "R1C2";
+            this.R1C2.Size = new System.Drawing.Size(109, 94);
+            this.R1C2.TabIndex = 1;
+            this.R1C2.UseVisualStyleBackColor = true;
+            this.R1C2.Click += new System.EventHandler(this.R1C2_Click);
+            // 
+            // R1C1
+            // 
+            this.R1C1.FlatAppearance.BorderSize = 0;
+            this.R1C1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R1C1.Font = new System.Drawing.Font("Ink Free", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.R1C1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
+            this.R1C1.Location = new System.Drawing.Point(6, 6);
+            this.R1C1.Name = "R1C1";
+            this.R1C1.Size = new System.Drawing.Size(109, 94);
+            this.R1C1.TabIndex = 0;
+            this.R1C1.UseVisualStyleBackColor = true;
+            this.R1C1.Click += new System.EventHandler(this.R1C1_Click);
             // 
             // gameScreen
             // 
@@ -83,6 +219,7 @@
             this.Name = "gameScreen";
             this.Text = "Tic-Tac-Toe";
             this.mainContainer.ResumeLayout(false);
+            this.gameGrid.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,5 +230,14 @@
         private Label game_Title;
         private Panel mainContainer;
         private TableLayoutPanel gameGrid;
+        private Button R1C1;
+        private Button R3C3;
+        private Button R3C2;
+        private Button R3C1;
+        private Button R2C3;
+        private Button R2C2;
+        private Button R2C1;
+        private Button R1C3;
+        private Button R1C2;
     }
 }
