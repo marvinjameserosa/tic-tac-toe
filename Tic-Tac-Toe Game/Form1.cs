@@ -86,6 +86,52 @@ namespace Tic_Tac_Toe_Game
                 R3C2.Enabled = false;
                 R3C3.Enabled = false;
             }
+
+            /* X WIN SCENARIO */
+
+            /*HORIZONTAL*/
+            if (R1C1VAL == 1 & R1C2VAL == 1 & R1C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* VERTICAL */
+            if (R1C1VAL == 1 & R2C1VAL == 1 & R3C1VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* DIAGONAL */
+
+            if (R1C1VAL == 1 & R2C2VAL == 1 & R3C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
             /*DRAW SCENARIO*/
             else if (num > 8)
             {
@@ -135,6 +181,36 @@ namespace Tic_Tac_Toe_Game
             if (R1C2VAL == 0 & R2C2VAL == 0 & R3C2VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+                R1C1.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* X WIN SCENARIO */
+
+            /* HORIZONTAL */
+            if (R1C1VAL == 1 & R1C2VAL == 1 & R1C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* VERTICAL */
+            if (R1C2VAL == 1 & R2C2VAL == 1 & R3C2VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
                 R1C1.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -218,6 +294,49 @@ namespace Tic_Tac_Toe_Game
                 R3C3.Enabled = false;
             }
 
+            /* X WIN SCENARIO */
+
+            /* HORIZOTAL */
+            if (R1C1VAL == 1 & R1C2VAL == 1 & R1C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* VERTICAL */
+            if (R1C3VAL == 1 & R2C3VAL == 1 & R3C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* DIAGONAL */
+            if (R1C3VAL == 1 & R2C2VAL == 1 & R3C1VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
             /*DRAW SCENARIO*/
             else if (num > 8)
             {
@@ -277,6 +396,35 @@ namespace Tic_Tac_Toe_Game
                 R3C3.Enabled = false;
             }
 
+            /* X WIN SCENARIO */
+
+            /* HORIZOTAL */
+            if (R2C1VAL == 1 & R2C2VAL == 1 & R2C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* VERTICAL */
+            if (R1C1VAL == 1 & R2C1VAL == 1 & R3C1VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
             /*DRAW SCENARIO*/
             else if (num > 8)
             {
@@ -365,6 +513,65 @@ namespace Tic_Tac_Toe_Game
                 R3C3.Enabled = false;
             }
 
+            /* X WIN SCENARIO */
+
+            /*HORIZONTAL*/
+            if (R2C1VAL == 1 & R2C2VAL == 1 & R2C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+            /* VERTICAL */
+            if (R1C2VAL == 1 & R2C2VAL == 1 & R3C2VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* DIAGONAL DESCENDING */
+
+            if (R1C1VAL == 1 & R2C2VAL == 1 & R3C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C2.Enabled = false;
+            }
+
+            /* DIAGONAL ASCENDING */
+
+            if (R1C3VAL == 1 & R2C2VAL == 1 & R3C1VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
             /*DRAW SCENARIO*/
             else if (num > 8)
             {
@@ -415,6 +622,36 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 0 & R2C3VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* X WIN SCENARIO */
+
+            /* HORIZONTAL */
+            if (R2C1VAL == 1 & R2C2VAL == 1 & R2C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* VERTICAL */
+            if (R1C3VAL == 1 & R2C3VAL == 1 & R3C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -497,6 +734,56 @@ namespace Tic_Tac_Toe_Game
                 R3C2.Enabled = false;
                 R3C3.Enabled = false;
             }
+
+            /* X WIN SCENARIO */
+
+            /* HORIZONTAL */
+            if (R3C1VAL == 1 & R3C2VAL == 1 & R3C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* VERTICAL */
+            if (R1C1VAL == 1 & R2C1VAL == 1 & R3C1VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* DIAGONAL */
+            if (R1C3VAL == 1 & R2C2VAL == 1 & R3C1VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /*DRAW SCENARIO*/
+            else if (num > 8)
+            {
+                gameSatus.Text = "Nobody Wins :(";
+            }
         }
 
         private void R3C2_Click(object sender, EventArgs e)
@@ -551,7 +838,41 @@ namespace Tic_Tac_Toe_Game
                 R3C3.Enabled = false;
             }
 
+            /* X WIN SCENARIO */
 
+            /* HORIZONTAL */
+            if (R3C1VAL == 1 & R3C2VAL == 1 & R3C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /* VERTICAL */
+            if (R1C2VAL == 1 & R2C2VAL == 1 & R3C2VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+            /*DRAW SCENARIO*/
+            else if (num > 8)
+            {
+                gameSatus.Text = "Nobody Wins :(";
+            }
         }
 
         private void R3C3_Click(object sender, EventArgs e)
@@ -621,6 +942,56 @@ namespace Tic_Tac_Toe_Game
                 R3C2.Enabled = false;
             }
 
+            /* X WIN SCENARIO */
+
+            /* HORIZONTAL */
+            if (R3C1VAL == 1 & R3C2VAL == 1 & R3C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+            }
+
+            /* VERTICAL */
+            if (R1C3VAL == 1 & R2C3VAL == 1 & R3C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R2C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C2.Enabled = false;
+                R3C3.Enabled = false;
+            }
+
+
+            /* DIAGONAL */
+            if (R1C1VAL == 1 & R2C2VAL == 1 & R3C3VAL == 1)
+            {
+                gameSatus.Text = "Player 2 Wins :)";
+                R1C1.Enabled = false;
+                R1C2.Enabled = false;
+                R1C3.Enabled = false;
+                R1C1.Enabled = false;
+                R2C2.Enabled = false;
+                R2C3.Enabled = false;
+                R3C1.Enabled = false;
+                R3C2.Enabled = false;
+            }
+
+            /*DRAW SCENARIO*/
+            else if (num > 8)
+            {
+                gameSatus.Text = "Nobody Wins :(";
+            }
         }
     }
 }
