@@ -40,6 +40,7 @@
             this.R1C3 = new System.Windows.Forms.Button();
             this.R1C2 = new System.Windows.Forms.Button();
             this.R1C1 = new System.Windows.Forms.Button();
+            this.gameSatus = new System.Windows.Forms.Label();
             this.mainContainer.SuspendLayout();
             this.gameGrid.SuspendLayout();
             this.SuspendLayout();
@@ -208,12 +209,23 @@
             this.R1C1.UseVisualStyleBackColor = true;
             this.R1C1.Click += new System.EventHandler(this.R1C1_Click);
             // 
+            // gameSatus
+            // 
+            this.gameSatus.AutoSize = true;
+            this.gameSatus.Font = new System.Drawing.Font("Ink Free", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gameSatus.ForeColor = System.Drawing.Color.White;
+            this.gameSatus.Location = new System.Drawing.Point(154, 104);
+            this.gameSatus.Name = "gameSatus";
+            this.gameSatus.Size = new System.Drawing.Size(0, 49);
+            this.gameSatus.TabIndex = 2;
+            // 
             // gameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(584, 524);
+            this.Controls.Add(this.gameSatus);
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.game_Title);
             this.Name = "gameScreen";
@@ -239,5 +251,6 @@
         private Button R2C1;
         private Button R1C3;
         private Button R1C2;
+        private Label gameSatus;
     }
 }
