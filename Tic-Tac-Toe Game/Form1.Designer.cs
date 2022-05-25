@@ -42,6 +42,8 @@
             this.R1C1 = new System.Windows.Forms.Button();
             this.gameSatus = new System.Windows.Forms.Label();
             this.resetBTN = new System.Windows.Forms.Button();
+            this.scorePlayer1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.mainContainer.SuspendLayout();
             this.gameGrid.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +53,7 @@
             this.game_Title.AutoSize = true;
             this.game_Title.Font = new System.Drawing.Font("Ink Free", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.game_Title.ForeColor = System.Drawing.Color.White;
-            this.game_Title.Location = new System.Drawing.Point(87, 21);
+            this.game_Title.Location = new System.Drawing.Point(109, 21);
             this.game_Title.Name = "game_Title";
             this.game_Title.Size = new System.Drawing.Size(393, 83);
             this.game_Title.TabIndex = 0;
@@ -61,7 +63,7 @@
             // mainContainer
             // 
             this.mainContainer.Controls.Add(this.gameGrid);
-            this.mainContainer.Location = new System.Drawing.Point(117, 190);
+            this.mainContainer.Location = new System.Drawing.Point(136, 219);
             this.mainContainer.Name = "mainContainer";
             this.mainContainer.Size = new System.Drawing.Size(339, 300);
             this.mainContainer.TabIndex = 1;
@@ -213,29 +215,60 @@
             // gameSatus
             // 
             this.gameSatus.AutoSize = true;
-            this.gameSatus.Font = new System.Drawing.Font("Ink Free", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gameSatus.Font = new System.Drawing.Font("Ink Free", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gameSatus.ForeColor = System.Drawing.Color.White;
-            this.gameSatus.Location = new System.Drawing.Point(154, 104);
+            this.gameSatus.Location = new System.Drawing.Point(207, 104);
             this.gameSatus.Name = "gameSatus";
-            this.gameSatus.Size = new System.Drawing.Size(0, 49);
+            this.gameSatus.Size = new System.Drawing.Size(197, 42);
             this.gameSatus.TabIndex = 2;
+            this.gameSatus.Text = "Start Game";
+            this.gameSatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // resetBTN
             // 
-            this.resetBTN.Location = new System.Drawing.Point(6, 288);
+            this.resetBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resetBTN.Font = new System.Drawing.Font("Ink Free", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.resetBTN.ForeColor = System.Drawing.Color.White;
+            this.resetBTN.Location = new System.Drawing.Point(163, 534);
             this.resetBTN.Name = "resetBTN";
-            this.resetBTN.Size = new System.Drawing.Size(96, 121);
+            this.resetBTN.Size = new System.Drawing.Size(274, 34);
             this.resetBTN.TabIndex = 3;
             this.resetBTN.Text = "RESET";
             this.resetBTN.UseVisualStyleBackColor = true;
             this.resetBTN.Click += new System.EventHandler(this.resetBTN_Click);
+            // 
+            // scorePlayer1
+            // 
+            this.scorePlayer1.AutoSize = true;
+            this.scorePlayer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.scorePlayer1.Font = new System.Drawing.Font("Ink Free", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.scorePlayer1.ForeColor = System.Drawing.Color.White;
+            this.scorePlayer1.Location = new System.Drawing.Point(127, 163);
+            this.scorePlayer1.Name = "scorePlayer1";
+            this.scorePlayer1.Size = new System.Drawing.Size(130, 36);
+            this.scorePlayer1.TabIndex = 4;
+            this.scorePlayer1.Text = "Payer O : ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Ink Free", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(342, 163);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 36);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Payer X : ";
             // 
             // gameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(584, 524);
+            this.ClientSize = new System.Drawing.Size(623, 580);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.scorePlayer1);
             this.Controls.Add(this.resetBTN);
             this.Controls.Add(this.gameSatus);
             this.Controls.Add(this.mainContainer);
@@ -265,5 +298,7 @@
         private Button R1C2;
         private Label gameSatus;
         private Button resetBTN;
+        private Label scorePlayer1;
+        private Label label1;
     }
 }

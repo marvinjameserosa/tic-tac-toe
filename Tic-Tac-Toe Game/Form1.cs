@@ -4,8 +4,9 @@ namespace Tic_Tac_Toe_Game
     {
         /* FOR X AND O BUTTON */
         int num;
+        int mod;
 
-        /* FOR WIN SCENARIO */
+        /* FOR WIN SCENARIO */ /* 10 IS ARBITRARY VALUE // IT CAN BE ANY VALUE AS LONG AS IT IS NOT 1 OR 0 */ 
         int R1C1VAL = 10;
         int R1C2VAL = 10;
         int R1C3VAL = 10;
@@ -24,7 +25,7 @@ namespace Tic_Tac_Toe_Game
         {
             /* FOR X AND O BUTTON */
             num = num + 1;
-            int mod = num % 2;
+            mod = num % 2;
 
             if (mod == 0)
             {   /* FOR X AND O BUTTON */
@@ -997,6 +998,7 @@ namespace Tic_Tac_Toe_Game
         private void resetBTN_Click(object sender, EventArgs e)
         {
             num = 0;
+            mod = 0;
 
             /* ENABLE ALL BUTTONS */
             R1C1.Enabled = true;
@@ -1021,18 +1023,18 @@ namespace Tic_Tac_Toe_Game
             R3C3.Text = "";
 
             /* RESET VALUE FOR WIN DETERMINER */
-            int R1C1VAL = 10;
-            int R1C2VAL = 10;
-            int R1C3VAL = 10;
-            int R2C1VAL = 10;
-            int R2C2VAL = 10;
-            int R2C3VAL = 10;
-            int R3C1VAL = 10;
-            int R3C2VAL = 10;
-            int R3C3VAL = 10;
+             R1C1VAL = 10;
+             R1C2VAL = 10;
+             R1C3VAL = 10;
+             R2C1VAL = 10;
+             R2C2VAL = 10;
+             R2C3VAL = 10;
+             R3C1VAL = 10;
+             R3C2VAL = 10;
+             R3C3VAL = 10;
 
             /* CLEAR GAME STATUS */
-            gameSatus.Text = string.Empty;
+            gameSatus.Text = "Start Game";
         }
     }
 }
