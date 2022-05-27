@@ -6,6 +6,13 @@ namespace Tic_Tac_Toe_Game
         int num;
         int mod;
 
+        /* WIN SCENARIO // DRAW SCENARIO FIX */
+        bool win = false;
+
+        /* SCORE FUNCTION */
+        int oscore = 0;
+        int xscore = 0;
+
         /* FOR WIN SCENARIO */ /* 10 IS ARBITRARY VALUE // IT CAN BE ANY VALUE AS LONG AS IT IS NOT 1 OR 0 */ 
         int R1C1VAL = 10;
         int R1C2VAL = 10;
@@ -49,6 +56,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 0 & R1C2VAL == 0 & R1C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -63,6 +79,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 0 & R2C1VAL == 0 & R3C1VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -78,6 +103,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 0 & R2C2VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -94,6 +128,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 1 & R1C2VAL == 1 & R1C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -108,6 +148,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 1 & R2C1VAL == 1 & R3C1VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -123,6 +169,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 1 & R2C2VAL == 1 & R3C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -134,7 +186,7 @@ namespace Tic_Tac_Toe_Game
             }
 
             /*DRAW SCENARIO*/
-            else if (num > 8)
+            else if (num > 8 & win == false)
             {
                 gameSatus.Text = "Nobody Wins :(";
             }
@@ -168,6 +220,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 0 & R1C2VAL == 0 & R1C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -182,6 +243,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C2VAL == 0 & R2C2VAL == 0 & R3C2VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -198,6 +268,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 1 & R1C2VAL == 1 & R1C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -212,6 +288,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C2VAL == 1 & R2C2VAL == 1 & R3C2VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C3.Enabled = false;
                 R2C1.Enabled = false;
@@ -223,7 +305,7 @@ namespace Tic_Tac_Toe_Game
             }
 
             /*DRAW SCENARIO*/
-            else if (num > 8)
+            else if (num > 8 & win == false)
             {
                 gameSatus.Text = "Nobody Wins :(";
             }
@@ -257,6 +339,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 0 & R1C2VAL == 0 & R1C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R2C1.Enabled = false;
@@ -271,6 +362,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 0 & R2C3VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R2C1.Enabled = false;
@@ -285,6 +385,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 0 & R2C2VAL == 0 & R3C1VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R2C1.Enabled = false;
@@ -301,6 +410,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 1 & R1C2VAL == 1 & R1C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R2C1.Enabled = false;
@@ -315,6 +430,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 1 & R2C3VAL == 1 & R3C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R2C1.Enabled = false;
@@ -329,6 +450,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 1 & R2C2VAL == 1 & R3C1VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R2C1.Enabled = false;
@@ -339,7 +466,7 @@ namespace Tic_Tac_Toe_Game
                 R3C3.Enabled = false;
             }
             /*DRAW SCENARIO*/
-            else if (num > 8)
+            else if (num > 8 & win == false)
             {
                 gameSatus.Text = "Nobody Wins :(";
             }
@@ -373,6 +500,15 @@ namespace Tic_Tac_Toe_Game
             if (R2C1VAL == 0 & R2C2VAL == 0 & R2C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -387,6 +523,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 0 & R2C1VAL == 0 & R3C1VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -403,6 +548,12 @@ namespace Tic_Tac_Toe_Game
             if (R2C1VAL == 1 & R2C2VAL == 1 & R2C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -417,6 +568,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 1 & R2C1VAL == 1 & R3C1VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -427,7 +584,7 @@ namespace Tic_Tac_Toe_Game
                 R3C3.Enabled = false;
             }
             /*DRAW SCENARIO*/
-            else if (num > 8)
+            else if (num > 8 & win == false)
             {
                 gameSatus.Text = "Nobody Wins :(";
             }
@@ -461,6 +618,15 @@ namespace Tic_Tac_Toe_Game
             if (R2C1VAL == 0 & R2C2VAL == 0 & R2C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -474,6 +640,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C2VAL == 0 & R2C2VAL == 0 & R3C2VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -489,6 +664,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 0 & R2C2VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -504,6 +688,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 0 & R2C2VAL == 0 & R3C1VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -520,6 +713,12 @@ namespace Tic_Tac_Toe_Game
             if (R2C1VAL == 1 & R2C2VAL == 1 & R2C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -533,6 +732,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C2VAL == 1 & R2C2VAL == 1 & R3C2VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -548,6 +753,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 1 & R2C2VAL == 1 & R3C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -563,6 +774,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 1 & R2C2VAL == 1 & R3C1VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -574,7 +791,7 @@ namespace Tic_Tac_Toe_Game
             }
 
             /*DRAW SCENARIO*/
-            else if (num > 8)
+            else if (num > 8 & win == false)
             {
                gameSatus.Text = "Nobody Wins :(";
                 
@@ -609,6 +826,15 @@ namespace Tic_Tac_Toe_Game
             if (R2C1VAL == 0 & R2C2VAL == 0 & R2C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -623,6 +849,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 0 & R2C3VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -639,6 +874,12 @@ namespace Tic_Tac_Toe_Game
             if (R2C1VAL == 1 & R2C2VAL == 1 & R2C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -653,6 +894,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 1 & R2C3VAL == 1 & R3C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -664,7 +911,7 @@ namespace Tic_Tac_Toe_Game
             }
 
             /*DRAW SCENARIO*/
-            else if (num > 8)
+            else if (num > 8 & win == false )
             {
                 gameSatus.Text = "Nobody Wins :(";
             }
@@ -698,6 +945,15 @@ namespace Tic_Tac_Toe_Game
             if (R3C1VAL == 0 & R3C2VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -712,6 +968,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 0 & R2C1VAL == 0 & R3C1VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -726,6 +991,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 0 & R2C2VAL == 0 & R3C1VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -742,6 +1016,12 @@ namespace Tic_Tac_Toe_Game
             if (R3C1VAL == 1 & R3C2VAL == 1 & R3C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -756,6 +1036,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 1 & R2C1VAL == 1 & R3C1VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -770,6 +1056,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 1 & R2C2VAL == 1 & R3C1VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -781,7 +1073,7 @@ namespace Tic_Tac_Toe_Game
             }
 
             /*DRAW SCENARIO*/
-            else if (num > 8)
+            else if (num > 8 & win == false)
             {
                 gameSatus.Text = "Nobody Wins :(";
             }
@@ -815,6 +1107,15 @@ namespace Tic_Tac_Toe_Game
             if (R3C1VAL == 0 & R3C2VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -829,6 +1130,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C2VAL == 0 & R2C2VAL == 0 & R3C2VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -845,6 +1155,12 @@ namespace Tic_Tac_Toe_Game
             if (R3C1VAL == 1 & R3C2VAL == 1 & R3C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -859,6 +1175,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C2VAL == 1 & R2C2VAL == 1 & R3C2VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -870,7 +1192,7 @@ namespace Tic_Tac_Toe_Game
             }
 
             /*DRAW SCENARIO*/
-            else if (num > 8)
+            else if (num > 8 & win == false)
             {
                 gameSatus.Text = "Nobody Wins :(";
             }
@@ -904,6 +1226,15 @@ namespace Tic_Tac_Toe_Game
             if (R3C1VAL == 0 & R3C2VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -918,6 +1249,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 0 & R2C3VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -933,6 +1273,15 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 0 & R2C2VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
+
+                /* GAME STATUS IDENTIFIER */
+                win = true;
+
+                /* SCORE FUNCTIONALITY */
+                oscore = oscore + 1;
+                scorePlayer1.Text = "Player O: " + oscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -949,6 +1298,12 @@ namespace Tic_Tac_Toe_Game
             if (R3C1VAL == 1 & R3C2VAL == 1 & R3C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -963,6 +1318,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C3VAL == 1 & R2C3VAL == 1 & R3C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -978,6 +1339,12 @@ namespace Tic_Tac_Toe_Game
             if (R1C1VAL == 1 & R2C2VAL == 1 & R3C3VAL == 1)
             {
                 gameSatus.Text = "Player 2 Wins :)";
+
+                /* SCORE FUNCTIONALITY */
+                xscore = xscore + 1;
+                scorePlayer2.Text = "Player X: " + xscore;
+
+                /* WIN SCENARIO BUTTON DISABLER */
                 R1C1.Enabled = false;
                 R1C2.Enabled = false;
                 R1C3.Enabled = false;
@@ -989,7 +1356,7 @@ namespace Tic_Tac_Toe_Game
             }
 
             /*DRAW SCENARIO*/
-            else if (num > 8)
+            else if (num > 8 & win == false)
             {
                 gameSatus.Text = "Nobody Wins :(";
             }
@@ -999,6 +1366,7 @@ namespace Tic_Tac_Toe_Game
         {
             num = 0;
             mod = 0;
+            win = false;
 
             /* ENABLE ALL BUTTONS */
             R1C1.Enabled = true;

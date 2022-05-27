@@ -43,7 +43,7 @@
             this.gameSatus = new System.Windows.Forms.Label();
             this.resetBTN = new System.Windows.Forms.Button();
             this.scorePlayer1 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.scorePlayer2 = new System.Windows.Forms.Label();
             this.mainContainer.SuspendLayout();
             this.gameGrid.SuspendLayout();
             this.SuspendLayout();
@@ -249,17 +249,17 @@
             this.scorePlayer1.TabIndex = 4;
             this.scorePlayer1.Text = "Payer O : ";
             // 
-            // label1
+            // scorePlayer2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Ink Free", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(342, 163);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 36);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Payer X : ";
+            this.scorePlayer2.AutoSize = true;
+            this.scorePlayer2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.scorePlayer2.Font = new System.Drawing.Font("Ink Free", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.scorePlayer2.ForeColor = System.Drawing.Color.White;
+            this.scorePlayer2.Location = new System.Drawing.Point(342, 163);
+            this.scorePlayer2.Name = "scorePlayer2";
+            this.scorePlayer2.Size = new System.Drawing.Size(121, 36);
+            this.scorePlayer2.TabIndex = 5;
+            this.scorePlayer2.Text = "Payer X : ";
             // 
             // gameScreen
             // 
@@ -267,7 +267,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(623, 580);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.scorePlayer2);
             this.Controls.Add(this.scorePlayer1);
             this.Controls.Add(this.resetBTN);
             this.Controls.Add(this.gameSatus);
@@ -299,6 +299,6 @@
         private Label gameSatus;
         private Button resetBTN;
         private Label scorePlayer1;
-        private Label label1;
+        private Label scorePlayer2;
     }
 }
