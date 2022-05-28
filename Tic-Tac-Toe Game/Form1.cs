@@ -23,9 +23,77 @@ namespace Tic_Tac_Toe_Game
         int R3C1VAL = 10;
         int R3C2VAL = 10;
         int R3C3VAL = 10;
+
+        /* COMPUTER MODE SWITCH */
+        bool comp = false;
+
         public gameScreen()
         {
             InitializeComponent();
+        }
+
+        public void first()
+        {
+            if (comp & num == 1)
+            {
+                R2C2.PerformClick();
+                gameSatus.Text = "Noice :)";
+            }
+        }
+
+        public void algorithm()
+        {
+            mod = num % 2;
+
+            if (comp & num >= 3 & mod != 0)
+            {
+                if (R1C1VAL == 10)
+                {
+                    R1C2.PerformClick();
+                }
+                else if (R1C2VAL == 10) 
+                {
+                    R1C2.PerformClick();
+                }
+                 else if (R1C3VAL == 10) 
+                {
+                    R1C3.PerformClick();
+                }
+                else if (R2C1VAL == 10)
+                {
+                    R2C1.PerformClick();
+                }
+                else if (R2C2VAL == 10)
+                {
+                    R2C2.PerformClick();
+                }
+                else if (R2C3VAL == 10)
+                {
+                    R2C3.PerformClick();
+                }
+                else if (R3C1VAL == 10)
+                {
+                    R3C1.PerformClick();
+                }
+                else if (R3C2VAL == 10)
+                {
+                    R3C2.PerformClick();
+                }
+                else if (R3C3VAL == 10)
+                {
+                    R3C3.PerformClick();
+                }
+            }
+
+        }
+
+        public void center()
+        {
+            if (comp & num == 1)
+            {
+                R1C2.PerformClick();
+                gameSatus.Text = "Noice :)";
+            }
         }
 
         private void R1C1_Click(object sender, EventArgs e)
@@ -50,6 +118,10 @@ namespace Tic_Tac_Toe_Game
             /* BUTTON DISABLE */
             R1C1.Enabled = false;
 
+            /* COMPUTER MODE*/
+            first();
+            algorithm();
+            
             /* O WIN SCENARIO */
 
                 /*HORIZONTAL*/
@@ -214,9 +286,13 @@ namespace Tic_Tac_Toe_Game
             /* BUTTON DISABLE */
             R1C2.Enabled = false;
 
+            /* COMPUTER MODE*/
+            first();
+            algorithm();
+
             /* O WIN SCENARIO */
 
-                 /* HORIZONTAL */
+            /* HORIZONTAL */
             if (R1C1VAL == 0 & R1C2VAL == 0 & R1C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
@@ -333,9 +409,13 @@ namespace Tic_Tac_Toe_Game
             /* BUTTON DISABLE */
             R1C3.Enabled = false;
 
+            /* COMPUTER MODE*/
+            first();
+            algorithm();
+
             /* O WIN SCENARIO */
-            
-                /*HORIZOTAL*/
+
+            /*HORIZOTAL*/
             if (R1C1VAL == 0 & R1C2VAL == 0 & R1C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
@@ -494,9 +574,13 @@ namespace Tic_Tac_Toe_Game
             /* BUTTON DISABLE */
             R2C1.Enabled = false;
 
+            /* COMPUTER MODE*/
+            first();
+            algorithm();
+
             /* O WIN SCENARIO */
 
-                /* HORIZOTAL */
+            /* HORIZOTAL */
             if (R2C1VAL == 0 & R2C2VAL == 0 & R2C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
@@ -612,9 +696,13 @@ namespace Tic_Tac_Toe_Game
             /* BUTTON DISABLE */
             R2C2.Enabled = false;
 
+            /* COMPUTER MODE*/
+            center();
+            algorithm();
+
             /* O WIN SCENARIO */
 
-                /*HORIZONTAL*/
+            /*HORIZONTAL*/
             if (R2C1VAL == 0 & R2C2VAL == 0 & R2C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
@@ -820,9 +908,13 @@ namespace Tic_Tac_Toe_Game
             /* BUTTON DISABLE */
             R2C3.Enabled = false;
 
+            /* COMPUTER MODE*/
+            first();
+            algorithm();
+
             /* O WIN SCENARIO */
 
-                 /* HORIZONTAL */
+            /* HORIZONTAL */
             if (R2C1VAL == 0 & R2C2VAL == 0 & R2C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
@@ -939,9 +1031,13 @@ namespace Tic_Tac_Toe_Game
             /* BUTTON DISABLE */
             R3C1.Enabled = false;
 
+            /* COMPUTER MODE*/
+            first();
+            algorithm();
+
             /* O WIN SCENARIO */
 
-                /* HORIZONTAL */
+            /* HORIZONTAL */
             if (R3C1VAL == 0 & R3C2VAL == 0 & R3C3VAL == 0)
             {
                 gameSatus.Text = "Player 1 Wins :)";
@@ -1101,6 +1197,10 @@ namespace Tic_Tac_Toe_Game
             /* BUTTON DISABLE */
             R3C2.Enabled = false;
 
+            /* COMPUTER MODE*/
+            first();
+            algorithm();
+
             /* O WIN SCENARIO */
 
             /* HORIZONTAL */
@@ -1219,6 +1319,10 @@ namespace Tic_Tac_Toe_Game
 
             /* BUTTON DISABLE */
             R3C3.Enabled = false;
+
+            /* COMPUTER MODE*/
+            first();
+            algorithm();
 
             /* O WIN SCENARIO */
 
@@ -1403,6 +1507,14 @@ namespace Tic_Tac_Toe_Game
 
             /* CLEAR GAME STATUS */
             gameSatus.Text = "Start Game";
+
+            comp = false;
+        }
+
+        private void computerMode_Click(object sender, EventArgs e)
+        {
+            comp = true;
+            gameSatus.Text = "You Go First ;)";
         }
     }
 }

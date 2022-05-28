@@ -44,6 +44,8 @@
             this.resetBTN = new System.Windows.Forms.Button();
             this.scorePlayer1 = new System.Windows.Forms.Label();
             this.scorePlayer2 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.computerMode = new System.Windows.Forms.Button();
             this.mainContainer.SuspendLayout();
             this.gameGrid.SuspendLayout();
             this.SuspendLayout();
@@ -261,18 +263,31 @@
             this.scorePlayer2.TabIndex = 5;
             this.scorePlayer2.Text = "Payer X : ";
             // 
+            // computerMode
+            // 
+            this.computerMode.ForeColor = System.Drawing.Color.Black;
+            this.computerMode.Location = new System.Drawing.Point(12, 296);
+            this.computerMode.Name = "computerMode";
+            this.computerMode.Size = new System.Drawing.Size(98, 82);
+            this.computerMode.TabIndex = 7;
+            this.computerMode.Text = "PLAY WITH COMPUTER";
+            this.computerMode.UseVisualStyleBackColor = true;
+            this.computerMode.Click += new System.EventHandler(this.computerMode_Click);
+            // 
             // gameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(623, 580);
+            this.ClientSize = new System.Drawing.Size(613, 580);
+            this.Controls.Add(this.computerMode);
             this.Controls.Add(this.scorePlayer2);
             this.Controls.Add(this.scorePlayer1);
             this.Controls.Add(this.resetBTN);
             this.Controls.Add(this.gameSatus);
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.game_Title);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "gameScreen";
             this.Text = "Tic-Tac-Toe";
             this.mainContainer.ResumeLayout(false);
@@ -300,5 +315,7 @@
         private Button resetBTN;
         private Label scorePlayer1;
         private Label scorePlayer2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Button computerMode;
     }
 }
