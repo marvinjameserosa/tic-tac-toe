@@ -24,64 +24,86 @@ namespace Tic_Tac_Toe_Game
         int R3C2VAL = 10;
         int R3C3VAL = 10;
 
-        /* COMPUTER MODE SWITCH */
-        bool comp = false;
+    /* COMPUTER MODE SWITCH */
+    bool comp = false;
 
         public gameScreen()
         {
             InitializeComponent();
         }
 
+        /* COMPUTER MODE ALGORITHM */
         public void first()
         {
             if (comp & num == 1)
             {
                 R2C2.PerformClick();
-                gameSatus.Text = "Noice :)";
+                gameSatus.Text = "Noice, Let's Play :)";
+                gameSatus.Location = new Point(178,105);
             }
         }
 
         public void algorithm()
         {
             mod = num % 2;
+            gameSatus.Text = "Is that your best?";
+            gameSatus.Location = new Point(167, 105);
 
             if (comp & num >= 3 & mod != 0)
             {
                 if (R1C1VAL == 10)
                 {
                     R1C2.PerformClick();
+                    gameSatus.Text = "Really?";
+                    gameSatus.Location = new Point(167, 105);
                 }
                 else if (R1C2VAL == 10) 
                 {
                     R1C2.PerformClick();
+                    gameSatus.Text = "You can do better!";
+                    gameSatus.Location = new Point(167, 105);
                 }
                  else if (R1C3VAL == 10) 
                 {
                     R1C3.PerformClick();
+                    gameSatus.Text = "Emotional Damage!";
+                    gameSatus.Location = new Point(167, 105);
                 }
                 else if (R2C1VAL == 10)
                 {
                     R2C1.PerformClick();
+                    gameSatus.Text = "Try Again :(";
+                    gameSatus.Location = new Point(167, 105);
                 }
                 else if (R2C2VAL == 10)
                 {
                     R2C2.PerformClick();
+                    gameSatus.Text = "Better luck next time :(";
+                    gameSatus.Location = new Point(167, 105);
                 }
                 else if (R2C3VAL == 10)
                 {
                     R2C3.PerformClick();
+                    gameSatus.Text = "The Earth is full go home";
+                    gameSatus.Location = new Point(167, 105);
                 }
                 else if (R3C1VAL == 10)
                 {
                     R3C1.PerformClick();
+                    gameSatus.Text = "Oh I get it … like humor … but different";
+                    gameSatus.Location = new Point(167, 105);
                 }
                 else if (R3C2VAL == 10)
                 {
                     R3C2.PerformClick();
+                    gameSatus.Text = "Thomas has nver seen such mess before";
+                    gameSatus.Location = new Point(167, 105);
                 }
                 else if (R3C3VAL == 10)
                 {
                     R3C3.PerformClick();
+                    gameSatus.Text = "What were you thingking";
+                    gameSatus.Location = new Point(167, 105);
                 }
             }
 
@@ -92,7 +114,8 @@ namespace Tic_Tac_Toe_Game
             if (comp & num == 1)
             {
                 R1C2.PerformClick();
-                gameSatus.Text = "Noice :)";
+                gameSatus.Text = "Noice, Let's Play :)";
+                gameSatus.Location = new Point(178, 105);
             }
         }
 
@@ -1515,6 +1538,7 @@ namespace Tic_Tac_Toe_Game
         {
             comp = true;
             gameSatus.Text = "You Go First ;)";
+            gameSatus.Location = new Point(204, 105);
         }
     }
 }

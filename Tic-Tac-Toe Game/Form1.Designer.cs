@@ -55,7 +55,7 @@
             this.game_Title.AutoSize = true;
             this.game_Title.Font = new System.Drawing.Font("Ink Free", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.game_Title.ForeColor = System.Drawing.Color.White;
-            this.game_Title.Location = new System.Drawing.Point(109, 21);
+            this.game_Title.Location = new System.Drawing.Point(123, 20);
             this.game_Title.Name = "game_Title";
             this.game_Title.Size = new System.Drawing.Size(393, 83);
             this.game_Title.TabIndex = 0;
@@ -65,7 +65,7 @@
             // mainContainer
             // 
             this.mainContainer.Controls.Add(this.gameGrid);
-            this.mainContainer.Location = new System.Drawing.Point(136, 219);
+            this.mainContainer.Location = new System.Drawing.Point(150, 220);
             this.mainContainer.Name = "mainContainer";
             this.mainContainer.Size = new System.Drawing.Size(339, 300);
             this.mainContainer.TabIndex = 1;
@@ -219,11 +219,11 @@
             this.gameSatus.AutoSize = true;
             this.gameSatus.Font = new System.Drawing.Font("Ink Free", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gameSatus.ForeColor = System.Drawing.Color.White;
-            this.gameSatus.Location = new System.Drawing.Point(207, 104);
+            this.gameSatus.Location = new System.Drawing.Point(221, 105);
             this.gameSatus.Name = "gameSatus";
-            this.gameSatus.Size = new System.Drawing.Size(197, 42);
+            this.gameSatus.Size = new System.Drawing.Size(305, 42);
             this.gameSatus.TabIndex = 2;
-            this.gameSatus.Text = "Start Game";
+            this.gameSatus.Text = "Is that your Best?";
             this.gameSatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // resetBTN
@@ -231,7 +231,7 @@
             this.resetBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resetBTN.Font = new System.Drawing.Font("Ink Free", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.resetBTN.ForeColor = System.Drawing.Color.White;
-            this.resetBTN.Location = new System.Drawing.Point(163, 534);
+            this.resetBTN.Location = new System.Drawing.Point(183, 530);
             this.resetBTN.Name = "resetBTN";
             this.resetBTN.Size = new System.Drawing.Size(274, 34);
             this.resetBTN.TabIndex = 3;
@@ -245,7 +245,7 @@
             this.scorePlayer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.scorePlayer1.Font = new System.Drawing.Font("Ink Free", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.scorePlayer1.ForeColor = System.Drawing.Color.White;
-            this.scorePlayer1.Location = new System.Drawing.Point(127, 163);
+            this.scorePlayer1.Location = new System.Drawing.Point(123, 163);
             this.scorePlayer1.Name = "scorePlayer1";
             this.scorePlayer1.Size = new System.Drawing.Size(130, 36);
             this.scorePlayer1.TabIndex = 4;
@@ -257,7 +257,7 @@
             this.scorePlayer2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.scorePlayer2.Font = new System.Drawing.Font("Ink Free", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.scorePlayer2.ForeColor = System.Drawing.Color.White;
-            this.scorePlayer2.Location = new System.Drawing.Point(342, 163);
+            this.scorePlayer2.Location = new System.Drawing.Point(395, 163);
             this.scorePlayer2.Name = "scorePlayer2";
             this.scorePlayer2.Size = new System.Drawing.Size(121, 36);
             this.scorePlayer2.TabIndex = 5;
@@ -265,12 +265,14 @@
             // 
             // computerMode
             // 
-            this.computerMode.ForeColor = System.Drawing.Color.Black;
-            this.computerMode.Location = new System.Drawing.Point(12, 296);
+            this.computerMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.computerMode.Font = new System.Drawing.Font("Ink Free", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.computerMode.ForeColor = System.Drawing.Color.White;
+            this.computerMode.Location = new System.Drawing.Point(183, 575);
             this.computerMode.Name = "computerMode";
-            this.computerMode.Size = new System.Drawing.Size(98, 82);
+            this.computerMode.Size = new System.Drawing.Size(274, 34);
             this.computerMode.TabIndex = 7;
-            this.computerMode.Text = "PLAY WITH COMPUTER";
+            this.computerMode.Text = "COMPUTER MODE";
             this.computerMode.UseVisualStyleBackColor = true;
             this.computerMode.Click += new System.EventHandler(this.computerMode_Click);
             // 
@@ -279,7 +281,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(107)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(613, 580);
+            this.ClientSize = new System.Drawing.Size(634, 631);
             this.Controls.Add(this.computerMode);
             this.Controls.Add(this.scorePlayer2);
             this.Controls.Add(this.scorePlayer1);
@@ -287,6 +289,7 @@
             this.Controls.Add(this.gameSatus);
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.game_Title);
+            this.Font = new System.Drawing.Font("Ink Free", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "gameScreen";
             this.Text = "Tic-Tac-Toe";
