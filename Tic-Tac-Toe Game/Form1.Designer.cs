@@ -219,11 +219,11 @@
             this.gameSatus.AutoSize = true;
             this.gameSatus.Font = new System.Drawing.Font("Ink Free", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gameSatus.ForeColor = System.Drawing.Color.White;
-            this.gameSatus.Location = new System.Drawing.Point(221, 105);
+            this.gameSatus.Location = new System.Drawing.Point(224, 105);
             this.gameSatus.Name = "gameSatus";
-            this.gameSatus.Size = new System.Drawing.Size(305, 42);
+            this.gameSatus.Size = new System.Drawing.Size(516, 42);
             this.gameSatus.TabIndex = 2;
-            this.gameSatus.Text = "Is that your Best?";
+            this.gameSatus.Text = "Oh! I didn\'t know you have friends";
             this.gameSatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // resetBTN
